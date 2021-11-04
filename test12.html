@@ -1,31 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="BMI Calculator เครื่องคำนวณหาค่าดัชนีมวลกาย">
+    <meta name="keywords" content="BMI">
+    <meta name="author" content="Karnsathon IoT">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./BMI/Style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap'); 
+    </style>
+
 </head>
+
 <body>
-    <h1>BMI Calculor</h1>
-    <hr>
-    น้ำหนักตัว(kg.)
-    <br>
-    <input type="number" name="" id="weight">
-    <br><br>
-    ส่วนสูง (Cm.)
-    <br><br>
-    <input type="number" name="" id="height">
-    <br><br>
-    <button id="calBMI">คำนวณ</button>
-    <br>
-    BMI
-    <br>
-    <span id="bmiValue">0</span> 
-    <br><br>
-    <span id="bmiResult">การแปลผล BMI</span> 
 
+    <header>
+        <div class="Header">
+            <div class="col">
+                <div class="logo">
+                    <a href="https://www.lovefitt.com/">
+                        <img src="https://www.lovefitt.com/system/wp-content/themes/lovefitt/img/lovefitt-logo.png"
+                            alt="lovefitt" title="lovefitt" class="logo-png">
 
+                        <img src="https://www.lovefitt.com/system/wp-content/themes/lovefitt/img/lovefitt-logo-txt.png"
+                            alt="lovefitt" title="lovefitt" class="logo-text">
+                    </a>
+                </div>
+
+                <div class="menu">
+
+                    <a href="https://www.lovefitt.com/health-diet" class="menu1">Health & diet</a>
+                    <a href="https://www.lovefitt.com/cooking"> Cooking </a>
+                    <a href="https://www.lovefitt.com/garden"> Garden </a>
+
+                    <button class="mainbtn">
+                        <img class="btn" src="https://img.icons8.com/ios-filled/50/000000/search--v1.png" />
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="bodypage">
+        <div class="text">
+            <h2>เครื่องคำนวณหาค่าดัชนีมวลกาย (BMI)</h2>
+            <br>
+            <p>การหาค่าดัชนีมวลกาย (Body Mass Index : BMI) คือเป็นมาตรการที่ใช้ประเมินภาวะอ้วนและผอมในผู้ใหญ่ตั้งแต่อายุ 20 ปีขึ้นไป
+               สามารถทำได้โดยการชั่งน้ำหนักตัวเป็นกิโลกรัม และวัดส่วนสูงเป็นเซนติเมตร
+               แล้วนำมาหาดัชมีมวลกาย โดยใช้โปรแกรมวัดค่าความอ้วนข้างต้น</p>
+        </div>
+
+        <div class="table">
+
+            <div class="space">
+
+                <label for="weight" class="f-weight">น้ำหนักตัว (kg.)</label>
+                <br><br>
+
+                <input type="number" name="" id="weight" class="i-weight">
+                <br><br>
+
+                <label for="weight" class="f-height">ส่วนสูง (Cm.)</label>
+                <br><br>
+
+                <input type="number" name="" id="height" class="i-height">
+                <br><br>
+
+                <button id="calBMI" class="cal">คำนวณ ↓</button>
+
+                <br><br>
+
+                <div class="resultBMI">
+
+                    <div class="result">
+                        <p>BMI</p>
+                        <span id="bmiValue">0</span>
+                        <br><br>
+                        <span id="bmiResult">การแปลงผล BMI</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
     <script src="./js/script12.js"></script>
 </body>
+
 </html>

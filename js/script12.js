@@ -31,6 +31,3 @@ function calculateBMI(){
 
 calBMI.addEventListener('click', calculateBMI)
 
-calBMI.addEventListener('mouseover', ()=>{
-    bmiResult.innerHTML = 'SAU IoT DTI'
-})
